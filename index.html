@@ -29,8 +29,8 @@
           </p> -->
         </div>
       </main>
-      <div class="flex flex-col">
-        <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+      <div class="mt-10 max-w-md mx-auto">
+        <div class="my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div
             class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
           >
@@ -51,18 +51,6 @@
                       class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                     >
                       Return Date
-                    </th>
-                    <th
-                      scope="col"
-                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    >
-                      Status
-                    </th>
-                    <th
-                      scope="col"
-                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                    >
-                      Role
                     </th>
                   </tr>
                 </thead>
@@ -90,18 +78,6 @@
                         {{ company.date }}
                       </div>
                     </td>
-                    <td class="px-6 py-4 whitespace-nowrap">
-                      <span
-                        class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800"
-                      >
-                        Active
-                      </span>
-                    </td>
-                    <td
-                      class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
-                    >
-                      Admin
-                    </td>
                   </tr>
                   {% endfor %}
 
@@ -110,6 +86,15 @@
               </table>
             </div>
           </div>
+        </div>
+        <div class="text-center mt-10">
+          If information is out of date or missing please
+          <a
+            target="_blank"
+            class="text-blue-600/100"
+            href="https://github.com/5tigerjelly/return-to-office/issues/new?template=feature_request.md"
+            >fill out a request</a
+          >
         </div>
       </div>
     </div>
